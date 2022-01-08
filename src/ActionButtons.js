@@ -1,19 +1,19 @@
 import React from "react";
 import "./ActionButtons.css";
 
-const Time = () => <span className="time">2:39 AM - 3 Jan 2016</span>;
+const Time = ({ time }) => <span className="time">{time}</span>;
 
 const ReplyButton = () => <i className="fa fa-reply reply-button" />;
 
-const RetweetButton = () => (
+const RetweetButton = ({ count }) => (
   <i className="fa fa-retweet retweet-button">
-    <span> 986</span>
+    <span> {count}</span>
   </i>
 );
 
-const LikeButton = () => (
+const LikeButton = ({ count }) => (
   <i className="fa fa-heart like-button">
-    <span> 1,404</span>
+    <span> {count}</span>
   </i>
 );
 
